@@ -1,0 +1,98 @@
+{
+    "key": "group_gusli_contacts",
+    "title": "Страница Контакты",
+    "fields": [
+        {
+            "key": "field_gusli_contacts_title",
+            "label": "Заголовок страницы",
+            "name": "title",
+            "type": "text",
+            "placeholder": "Контакты"
+        },
+        {
+            "key": "field_gusli_contacts_lead",
+            "label": "Подзаголовок",
+            "name": "lead",
+            "type": "textarea",
+            "rows": 2,
+            "new_lines": "",
+            "placeholder": "Отвечаем в течение рабочего дня — расскажите о задаче, и мы предложим лучшее решение."
+        },
+        {
+            "key": "field_gusli_contacts_info_title",
+            "label": "Заголовок блока",
+            "name": "info_title",
+            "type": "text",
+            "placeholder": "Как мы работаем"
+        },
+        {
+            "key": "field_gusli_contacts_text_1",
+            "label": "Первый абзац",
+            "name": "text_1",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": "",
+            "instructions": "Пустая строка внутри поля начинает новый абзац."
+        },
+        {
+            "key": "field_gusli_contacts_text_2",
+            "label": "Второй абзац",
+            "name": "text_2",
+            "type": "textarea",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_gusli_contacts_facts",
+            "label": "Список фактов",
+            "name": "facts",
+            "type": "repeater",
+            "layout": "table",
+            "button_label": "Добавить пункт",
+            "instructions": "Если пусто, выводятся пункты по умолчанию.",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_contacts_fact_text",
+                    "label": "Пункт",
+                    "name": "text",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_contacts_map_src",
+            "label": "Ссылка карты (iframe)",
+            "name": "map_src",
+            "type": "url",
+            "instructions": "Адрес из виджета Яндекс.Карт (map-widget). Если пусто, показывается карта Обнинска."
+        },
+        {
+            "key": "field_gusli_contacts_map_title",
+            "label": "Подпись карты",
+            "name": "map_title",
+            "type": "text",
+            "placeholder": "Gusli Web на карте — Обнинск"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contacts.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1793600000
+}

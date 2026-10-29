@@ -1,0 +1,1876 @@
+{
+    "key": "group_gusli_hero",
+    "title": "Главная страница",
+    "fields": [
+        {
+            "key": "field_gusli_accordion_hero",
+            "label": "Первая секция (Hero)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_hero",
+            "label": "Поля секции (Hero)",
+            "name": "hero",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_hero_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Сайт + контент, который приводит",
+                    "instructions": "Первая строка заголовка."
+                },
+                {
+                    "key": "field_gusli_hero_title_accent",
+                    "label": "Выделенное слово в заголовке",
+                    "name": "title_accent",
+                    "type": "text",
+                    "placeholder": "клиентов",
+                    "instructions": "Вторая строка заголовка, выводится акцентным цветом."
+                },
+                {
+                    "key": "field_gusli_hero_description",
+                    "label": "Описание",
+                    "name": "description",
+                    "type": "textarea",
+                    "rows": 6,
+                    "new_lines": "",
+                    "instructions": "Каждый абзац с новой строки. Неразрывный пробел: &amp;nbsp;",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_hero_button_primary",
+                    "label": "Основная кнопка (открывает подбор решения)",
+                    "name": "button_primary",
+                    "type": "text",
+                    "placeholder": "Подобрать решение за 2 минуты"
+                },
+                {
+                    "key": "field_gusli_hero_button_text",
+                    "label": "Вторая кнопка: текст",
+                    "name": "button_text",
+                    "type": "text",
+                    "placeholder": "Смотреть кейсы",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_hero_button_link",
+                    "label": "Вторая кнопка: ссылка",
+                    "name": "button_link",
+                    "type": "text",
+                    "placeholder": "#cases",
+                    "instructions": "Якорь (#cases) или полный адрес.",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_hero_badges",
+                    "label": "Плашки под кнопками",
+                    "name": "badges",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить плашку",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_hero_badge_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_hero_note",
+                    "label": "Заметка под плашками",
+                    "name": "note",
+                    "type": "text",
+                    "placeholder": "Свободны 2 слота на разработку · отвечаем в течение рабочего дня"
+                },
+                {
+                    "key": "field_gusli_hero_image",
+                    "label": "Картинка справа",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "instructions": "Если не выбрана, показывается макет из темы."
+                },
+                {
+                    "key": "field_gusli_hero_stats",
+                    "label": "Полоса с цифрами",
+                    "name": "stats",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить цифру",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_hero_stat_value",
+                            "label": "Цифра",
+                            "name": "value",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "30"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_hero_stat_label",
+                            "label": "Подпись",
+                            "name": "label",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "70"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_reasons",
+            "label": "Вторая секция (Причины)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_reasons",
+            "label": "Поля секции (Причины)",
+            "name": "reasons",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_reasons_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "С чем приходят"
+                },
+                {
+                    "key": "field_gusli_reasons_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Три причины, по которым сайт не работает"
+                },
+                {
+                    "key": "field_gusli_reasons_lead",
+                    "label": "Подзаголовок",
+                    "name": "lead",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_reasons_items",
+                    "label": "Причины",
+                    "name": "items",
+                    "type": "repeater",
+                    "instructions": "Если не добавить ни одной причины, выводятся три причины по умолчанию. Подпись «ПРИЧИНА 01» ставится автоматически.",
+                    "layout": "block",
+                    "button_label": "Добавить причину",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_reason_title",
+                            "label": "Название",
+                            "name": "title",
+                            "type": "text"
+                        },
+                        {
+                            "key": "field_gusli_reason_text",
+                            "label": "Описание",
+                            "name": "text",
+                            "type": "textarea",
+                            "rows": 3,
+                            "new_lines": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_fork",
+            "label": "Третья секция (Два трека)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_fork",
+            "label": "Поля секции (Два трека)",
+            "name": "fork",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_fork_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Развилка ·",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_fork_eyebrow_step",
+                    "label": "Надпись: жирная часть",
+                    "name": "eyebrow_step",
+                    "type": "text",
+                    "placeholder": "шаг 1",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_fork_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Два трека. Выбираете один — дальше всё предсказуемо"
+                },
+                {
+                    "key": "field_gusli_fork_lead",
+                    "label": "Описание",
+                    "name": "lead",
+                    "type": "textarea",
+                    "rows": 4,
+                    "new_lines": "",
+                    "instructions": "Каждый абзац с новой строки.",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_fork_scheme",
+                    "label": "Схема пути (SVG)",
+                    "name": "scheme",
+                    "type": "group",
+                    "layout": "block",
+                    "instructions": "Меняются только тексты схемы. Блоки фиксированной ширины, поэтому держите подписи короткими.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_fork_scheme_caption_left",
+                            "label": "Подпись схемы: слева",
+                            "name": "caption_left",
+                            "type": "text",
+                            "placeholder": "Схема · путь от заявки до запуска"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_caption_right",
+                            "label": "Подпись схемы: справа",
+                            "name": "caption_right",
+                            "type": "text",
+                            "placeholder": "развилка на шаге 2"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_aria",
+                            "label": "Описание схемы для скринридеров",
+                            "name": "aria",
+                            "type": "textarea",
+                            "placeholder": "Схема пути: заявка, бесплатная диагностика, затем развилка на два трека — пакет с фиксированной ценой или кастом со сметой по этапам; оба трека ведут к запуску, код и доступы остаются у клиента",
+                            "rows": 3,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_request_title",
+                            "label": "Шаг 1: название",
+                            "name": "request_title",
+                            "type": "text",
+                            "placeholder": "Заявка"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_request_sub",
+                            "label": "Шаг 1: пояснение",
+                            "name": "request_sub",
+                            "type": "text",
+                            "placeholder": "бриф, 1 минута"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_diag_title",
+                            "label": "Шаг 2: название",
+                            "name": "diag_title",
+                            "type": "text",
+                            "placeholder": "Диагностика"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_diag_sub",
+                            "label": "Шаг 2: пояснение",
+                            "name": "diag_sub",
+                            "type": "text",
+                            "placeholder": "40 минут · 0 ₽"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_a_label",
+                            "label": "Трек A: подпись",
+                            "name": "a_label",
+                            "type": "text",
+                            "placeholder": "ТРЕК A · ПАКЕТ · ФИКС-ЦЕНА"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_a1_title",
+                            "label": "Трек A, шаг 1: название",
+                            "name": "a1_title",
+                            "type": "text",
+                            "placeholder": "Смета и договор"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_a1_sub",
+                            "label": "Трек A, шаг 1: пояснение",
+                            "name": "a1_sub",
+                            "type": "text",
+                            "placeholder": "цена и срок зафиксированы"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_a2_title",
+                            "label": "Трек A, шаг 2: название",
+                            "name": "a2_title",
+                            "type": "text",
+                            "placeholder": "Производство"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_a2_sub",
+                            "label": "Трек A, шаг 2: пояснение",
+                            "name": "a2_sub",
+                            "type": "text",
+                            "placeholder": "7–45 дней"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_b_label",
+                            "label": "Трек B: подпись",
+                            "name": "b_label",
+                            "type": "text",
+                            "placeholder": "ТРЕК B · КАСТОМ · СМЕТА ПО ЭТАПАМ"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_b1_title",
+                            "label": "Трек B, шаг 1: название",
+                            "name": "b1_title",
+                            "type": "text",
+                            "placeholder": "Аналитика и прототип"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_b1_sub",
+                            "label": "Трек B, шаг 1: пояснение",
+                            "name": "b1_sub",
+                            "type": "text",
+                            "placeholder": "цена появляется здесь"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_b2_title",
+                            "label": "Трек B, шаг 2: название",
+                            "name": "b2_title",
+                            "type": "text",
+                            "placeholder": "Этапы по смете"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_b2_sub",
+                            "label": "Трек B, шаг 2: пояснение",
+                            "name": "b2_sub",
+                            "type": "text",
+                            "placeholder": "от 10 недель"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_launch_title",
+                            "label": "Запуск: название",
+                            "name": "launch_title",
+                            "type": "text",
+                            "placeholder": "Запуск"
+                        },
+                        {
+                            "key": "field_gusli_fork_scheme_launch_sub",
+                            "label": "Запуск: пояснение",
+                            "name": "launch_sub",
+                            "type": "text",
+                            "placeholder": "код и доступы ваши"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_fork_track_a",
+                    "label": "Блок: Трек A",
+                    "name": "track_a",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_fork_track_a_tag",
+                            "label": "Метка",
+                            "name": "tag",
+                            "type": "text",
+                            "placeholder": "Трек A · пакет"
+                        },
+                        {
+                            "key": "field_gusli_fork_track_a_title",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "text",
+                            "placeholder": "Готовое решение с фиксированной ценой"
+                        },
+                        {
+                            "key": "field_gusli_fork_track_a_lead",
+                            "label": "Подзаголовок",
+                            "name": "lead",
+                            "type": "textarea",
+                            "rows": 2,
+                            "new_lines": "",
+                            "placeholder": "Когда бюджет ограничен и нужен предсказуемый результат в понятный срок."
+                        },
+                        {
+                            "key": "field_gusli_fork_track_a_items",
+                            "label": "Список условий",
+                            "name": "items",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Добавить пункт",
+                            "instructions": "Если пусто, выводятся пункты по умолчанию.",
+                            "sub_fields": [
+                                {
+                                    "key": "field_gusli_fork_track_a_item_text",
+                                    "label": "Текст",
+                                    "name": "text",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_gusli_fork_track_a_price",
+                            "label": "Цена («от …»)",
+                            "name": "price",
+                            "type": "text",
+                            "placeholder": "от 59 000 ₽"
+                        },
+                        {
+                            "key": "field_gusli_fork_track_a_button_text",
+                            "label": "Кнопка: текст",
+                            "name": "button_text",
+                            "type": "text",
+                            "placeholder": "Смотреть пакеты",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_fork_track_a_button_link",
+                            "label": "Кнопка: ссылка",
+                            "name": "button_link",
+                            "type": "text",
+                            "placeholder": "#packages",
+                            "instructions": "Якорь (#packages) или полный адрес.",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_fork_track_b",
+                    "label": "Блок: Трек B",
+                    "name": "track_b",
+                    "type": "group",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_fork_track_b_tag",
+                            "label": "Метка",
+                            "name": "tag",
+                            "type": "text",
+                            "placeholder": "Трек B · кастом"
+                        },
+                        {
+                            "key": "field_gusli_fork_track_b_title",
+                            "label": "Заголовок",
+                            "name": "title",
+                            "type": "text",
+                            "placeholder": "Проект под задачу, со сметой по этапам"
+                        },
+                        {
+                            "key": "field_gusli_fork_track_b_lead",
+                            "label": "Подзаголовок",
+                            "name": "lead",
+                            "type": "textarea",
+                            "rows": 2,
+                            "new_lines": "",
+                            "placeholder": "Когда решения «из коробки» не существует и цену честно назвать до анализа нельзя."
+                        },
+                        {
+                            "key": "field_gusli_fork_track_b_items",
+                            "label": "Список условий",
+                            "name": "items",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Добавить пункт",
+                            "instructions": "Если пусто, выводятся пункты по умолчанию.",
+                            "sub_fields": [
+                                {
+                                    "key": "field_gusli_fork_track_b_item_text",
+                                    "label": "Текст",
+                                    "name": "text",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_gusli_fork_track_b_price",
+                            "label": "Цена («от …»)",
+                            "name": "price",
+                            "type": "text",
+                            "placeholder": "от 450 000 ₽"
+                        },
+                        {
+                            "key": "field_gusli_fork_track_b_button_text",
+                            "label": "Кнопка: текст",
+                            "name": "button_text",
+                            "type": "text",
+                            "placeholder": "Как считаем кастом",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_fork_track_b_button_link",
+                            "label": "Кнопка: ссылка",
+                            "name": "button_link",
+                            "type": "text",
+                            "placeholder": "#custom",
+                            "instructions": "Якорь (#packages) или полный адрес.",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_bundle",
+            "label": "Четвёртая секция (Пакеты)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_bundle",
+            "label": "Поля секции (Пакеты)",
+            "name": "bundle",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_bundle_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Трек A ·",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_bundle_eyebrow_bold",
+                    "label": "Надпись: жирная часть",
+                    "name": "eyebrow_bold",
+                    "type": "text",
+                    "placeholder": "пакеты",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_bundle_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Три пакета под ограниченный бюджет"
+                },
+                {
+                    "key": "field_gusli_bundle_lead",
+                    "label": "Описание",
+                    "name": "lead",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_bundle_hot_flag",
+                    "label": "Флажок у выделенного пакета",
+                    "name": "hot_flag",
+                    "type": "text",
+                    "placeholder": "ЧАЩЕ ВСЕГО БЕРУТ"
+                },
+                {
+                    "key": "field_gusli_bundle_tiers",
+                    "label": "Пакеты",
+                    "name": "tiers",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить пакет",
+                    "instructions": "Если не добавить ни одного пакета, выводятся три пакета по умолчанию. Сумма в калькуляторе считается по цифрам в поле «Цена». Квиз подсвечивает пакеты по названиям «Лендинг», «Сайт», «Сервис».",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_bundle_tier_name",
+                            "label": "Название",
+                            "name": "name",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "40"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_bundle_tier_hot",
+                            "label": "Выделить («Чаще всего берут»)",
+                            "name": "hot",
+                            "type": "true_false",
+                            "ui": 1,
+                            "wrapper": {
+                                "width": "60"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_bundle_tier_who",
+                            "label": "Для кого",
+                            "name": "who",
+                            "type": "text"
+                        },
+                        {
+                            "key": "field_gusli_bundle_tier_price",
+                            "label": "Цена",
+                            "name": "price",
+                            "type": "text",
+                            "placeholder": "59 000 ₽",
+                            "wrapper": {
+                                "width": "40"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_bundle_tier_note",
+                            "label": "Пояснение к цене",
+                            "name": "note",
+                            "type": "text",
+                            "placeholder": "фикс, предоплата 50%",
+                            "wrapper": {
+                                "width": "60"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_bundle_tier_meta",
+                            "label": "Сроки и правки",
+                            "name": "meta",
+                            "type": "text",
+                            "placeholder": "срок 7–10 дней правок 2 круга"
+                        },
+                        {
+                            "key": "field_gusli_bundle_tier_features",
+                            "label": "Что входит",
+                            "name": "features",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Добавить пункт",
+                            "sub_fields": [
+                                {
+                                    "key": "field_gusli_bundle_feature_text",
+                                    "label": "Пункт",
+                                    "name": "text",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "75"
+                                    }
+                                },
+                                {
+                                    "key": "field_gusli_bundle_feature_excluded",
+                                    "label": "Не входит",
+                                    "name": "excluded",
+                                    "type": "true_false",
+                                    "ui": 1,
+                                    "wrapper": {
+                                        "width": "25"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_bundle_addons_title",
+                    "label": "Дополнения: заголовок",
+                    "name": "addons_title",
+                    "type": "text",
+                    "placeholder": "Достроить пакет"
+                },
+                {
+                    "key": "field_gusli_bundle_addons_lead",
+                    "label": "Дополнения: описание",
+                    "name": "addons_lead",
+                    "type": "textarea",
+                    "rows": 2,
+                    "new_lines": "",
+                    "placeholder": "Отметьте, что нужно дополнительно — увидите итоговую вилку до разговора."
+                },
+                {
+                    "key": "field_gusli_bundle_base_label",
+                    "label": "Подпись «БАЗА:»",
+                    "name": "base_label",
+                    "type": "text",
+                    "placeholder": "БАЗА:",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_bundle_sum_label",
+                    "label": "Подпись суммы",
+                    "name": "sum_label",
+                    "type": "text",
+                    "placeholder": "Ориентировочная стоимость сборки",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_bundle_addons",
+                    "label": "Дополнения",
+                    "name": "addons",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить дополнение",
+                    "instructions": "Если пусто, выводятся шесть дополнений по умолчанию.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_bundle_addon_name",
+                            "label": "Название",
+                            "name": "name",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "35"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_bundle_addon_hint",
+                            "label": "Пояснение",
+                            "name": "hint",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "40"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_bundle_addon_price",
+                            "label": "Цена, ₽",
+                            "name": "price",
+                            "type": "number",
+                            "min": 0,
+                            "step": 1,
+                            "wrapper": {
+                                "width": "25"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_bundle_disclaimer",
+                    "label": "Примечание под калькулятором",
+                    "name": "disclaimer",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_bundle_hide_disclaimer",
+                    "label": "Скрыть примечание",
+                    "name": "hide_disclaimer",
+                    "type": "true_false",
+                    "ui": 1,
+                    "instructions": "Сейчас на сайте виден черновой текст про «рабочий шаблон структуры». Включите, чтобы скрыть."
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_custom",
+            "label": "Пятая секция (Кастом)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_custom",
+            "label": "Поля секции (Кастом)",
+            "name": "custom",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_custom_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Трек B ·",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_custom_eyebrow_bold",
+                    "label": "Надпись: жирная часть",
+                    "name": "eyebrow_bold",
+                    "type": "text",
+                    "placeholder": "кастом",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_custom_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Сложный проект: сначала считаем, потом называем цену"
+                },
+                {
+                    "key": "field_gusli_custom_lead",
+                    "label": "Описание",
+                    "name": "lead",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_custom_crit_title",
+                    "label": "Левый блок: заголовок",
+                    "name": "crit_title",
+                    "type": "text",
+                    "placeholder": "Берём в кастом, если"
+                },
+                {
+                    "key": "field_gusli_custom_crit_items",
+                    "label": "Левый блок: условия",
+                    "name": "crit_items",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить условие",
+                    "instructions": "Если пусто, выводятся пять условий по умолчанию.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_custom_crit_item_text",
+                            "label": "Текст",
+                            "name": "text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_custom_crit_note",
+                    "label": "Левый блок: примечание",
+                    "name": "crit_note",
+                    "type": "textarea",
+                    "rows": 2,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_custom_phases",
+                    "label": "Этапы",
+                    "name": "phases",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить этап",
+                    "instructions": "Номер «ЭТАП N» ставится автоматически. Если пусто, выводятся шесть этапов по умолчанию.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_custom_phase_title",
+                            "label": "Название",
+                            "name": "title",
+                            "type": "text"
+                        },
+                        {
+                            "key": "field_gusli_custom_phase_text",
+                            "label": "Описание",
+                            "name": "text",
+                            "type": "textarea",
+                            "rows": 3,
+                            "new_lines": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_gusli_custom_phase_price",
+                            "label": "Цена",
+                            "name": "price",
+                            "type": "text",
+                            "placeholder": "от 60 000 ₽",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_custom_phase_term",
+                            "label": "Срок",
+                            "name": "term",
+                            "type": "text",
+                            "placeholder": "1–2 недели",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_custom_button_text",
+                    "label": "Кнопка: текст",
+                    "name": "button_text",
+                    "type": "text",
+                    "placeholder": "Запросить диагностику",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_custom_button_link",
+                    "label": "Кнопка: ссылка",
+                    "name": "button_link",
+                    "type": "text",
+                    "placeholder": "#brief",
+                    "wrapper": {
+                        "width": "50"
+                    },
+                    "instructions": "Якорь (#brief) или полный адрес."
+                },
+                {
+                    "key": "field_gusli_custom_footer_note",
+                    "label": "Подпись рядом с кнопкой",
+                    "name": "footer_note",
+                    "type": "textarea",
+                    "rows": 2,
+                    "new_lines": "",
+                    "placeholder": "Бесплатно и ни к чему не обязывает — после неё у вас на руках резюме задачи."
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_cases",
+            "label": "Шестая секция (Кейсы)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_cases",
+            "label": "Поля секции (Кейсы)",
+            "name": "cases",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_cases_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Примеры решений"
+                },
+                {
+                    "key": "field_gusli_cases_link_text",
+                    "label": "Ссылка справа: текст",
+                    "name": "link_text",
+                    "type": "text",
+                    "placeholder": "Смотреть все кейсы →",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_cases_link_url",
+                    "label": "Ссылка справа: адрес",
+                    "name": "link_url",
+                    "type": "text",
+                    "placeholder": "./cases",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_cases_items",
+                    "label": "Кейсы",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить кейс",
+                    "instructions": "Если не добавить ни одного кейса, выводятся три кейса по умолчанию. Их ссылки ведут на файлы-макеты, которых в WordPress нет, поэтому укажите настоящие адреса.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_cases_item_title",
+                            "label": "Название",
+                            "name": "title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_cases_item_link",
+                            "label": "Ссылка на кейс",
+                            "name": "link",
+                            "type": "text",
+                            "placeholder": "https://",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_cases_item_image",
+                            "label": "Картинка",
+                            "name": "image",
+                            "type": "image",
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_cases_item_alt",
+                            "label": "Описание картинки (alt)",
+                            "name": "alt",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_cases_item_tags",
+                            "label": "Метки",
+                            "name": "tags",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Добавить метку",
+                            "sub_fields": [
+                                {
+                                    "key": "field_gusli_cases_tag_text",
+                                    "label": "Текст",
+                                    "name": "text",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "75"
+                                    }
+                                },
+                                {
+                                    "key": "field_gusli_cases_tag_accent",
+                                    "label": "Акцентная",
+                                    "name": "accent",
+                                    "type": "true_false",
+                                    "ui": 1,
+                                    "wrapper": {
+                                        "width": "25"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_process",
+            "label": "Седьмая секция (Процесс)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_process",
+            "label": "Поля секции (Процесс)",
+            "name": "process",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_process_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Процесс"
+                },
+                {
+                    "key": "field_gusli_process_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Как проходит работа по пакету"
+                },
+                {
+                    "key": "field_gusli_process_lead",
+                    "label": "Описание",
+                    "name": "lead",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_process_steps",
+                    "label": "Шаги",
+                    "name": "steps",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить шаг",
+                    "instructions": "Номер «01, 02…» ставится автоматически. Если пусто, выводятся шесть шагов по умолчанию.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_process_step_title",
+                            "label": "Название",
+                            "name": "title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "60"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_process_step_time",
+                            "label": "Срок",
+                            "name": "time",
+                            "type": "text",
+                            "placeholder": "1–2 дня",
+                            "wrapper": {
+                                "width": "40"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_process_step_text",
+                            "label": "Описание",
+                            "name": "text",
+                            "type": "textarea",
+                            "rows": 2,
+                            "new_lines": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_process_need_label",
+                    "label": "Блок внизу: жирное начало",
+                    "name": "need_label",
+                    "type": "text",
+                    "placeholder": "Что нужно от вас:",
+                    "wrapper": {
+                        "width": "40"
+                    }
+                },
+                {
+                    "key": "field_gusli_process_need_text",
+                    "label": "Блок внизу: текст",
+                    "name": "need_text",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию.",
+                    "wrapper": {
+                        "width": "60"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_faq",
+            "label": "Восьмая секция (Вопросы)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_faq",
+            "label": "Поля секции (Вопросы)",
+            "name": "faq",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_faq_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Вопросы"
+                },
+                {
+                    "key": "field_gusli_faq_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Что обычно спрашивают до заявки"
+                },
+                {
+                    "key": "field_gusli_faq_items",
+                    "label": "Вопросы и ответы",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить вопрос",
+                    "instructions": "Если пусто, выводятся семь вопросов по умолчанию. Вопрос без ответа не показывается.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_faq_question",
+                            "label": "Вопрос",
+                            "name": "question",
+                            "type": "text"
+                        },
+                        {
+                            "key": "field_gusli_faq_answer",
+                            "label": "Ответ",
+                            "name": "answer",
+                            "type": "textarea",
+                            "rows": 4,
+                            "new_lines": "",
+                            "instructions": "Каждый абзац с новой строки."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_tasks",
+            "label": "Девятая секция (Задачи и результаты)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_tasks",
+            "label": "Поля секции (Задачи и результаты)",
+            "name": "tasks",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_tasks_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Кейсы"
+                },
+                {
+                    "key": "field_gusli_tasks_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Задача → решение → результат"
+                },
+                {
+                    "key": "field_gusli_tasks_lead",
+                    "label": "Описание",
+                    "name": "lead",
+                    "type": "textarea",
+                    "rows": 2,
+                    "new_lines": "",
+                    "placeholder": "Показываем не картинки, а что именно изменили и к чему это привело."
+                },
+                {
+                    "key": "field_gusli_tasks_items",
+                    "label": "Кейсы",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить кейс",
+                    "instructions": "Если пусто, выводятся три кейса по умолчанию.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_tasks_item_tag",
+                            "label": "Метка",
+                            "name": "tag",
+                            "type": "text",
+                            "placeholder": "Пакет «Сайт» · услуги",
+                            "wrapper": {
+                                "width": "40"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_tasks_item_title",
+                            "label": "Название",
+                            "name": "title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "60"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_tasks_item_task",
+                            "label": "Задача",
+                            "name": "task",
+                            "type": "textarea",
+                            "rows": 2,
+                            "new_lines": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_gusli_tasks_item_solution",
+                            "label": "Решение",
+                            "name": "solution",
+                            "type": "textarea",
+                            "rows": 2,
+                            "new_lines": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_gusli_tasks_item_results",
+                            "label": "Результаты",
+                            "name": "results",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Добавить результат",
+                            "sub_fields": [
+                                {
+                                    "key": "field_gusli_tasks_result_value",
+                                    "label": "Цифра",
+                                    "name": "value",
+                                    "type": "text",
+                                    "placeholder": "+34%",
+                                    "wrapper": {
+                                        "width": "30"
+                                    }
+                                },
+                                {
+                                    "key": "field_gusli_tasks_result_label",
+                                    "label": "Подпись",
+                                    "name": "label",
+                                    "type": "text",
+                                    "placeholder": "заявок за 2 месяца",
+                                    "wrapper": {
+                                        "width": "70"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_tasks_related_mono",
+                    "label": "Смежная услуга: надпись",
+                    "name": "related_mono",
+                    "type": "text",
+                    "placeholder": "Смежная услуга",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_tasks_related_title",
+                    "label": "Смежная услуга: заголовок",
+                    "name": "related_title",
+                    "type": "text",
+                    "placeholder": "Нужны фото, видео и рилсы для сайта?",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_tasks_related_text",
+                    "label": "Смежная услуга: текст",
+                    "name": "related_text",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Если оставить пустым, выводится текст по умолчанию."
+                },
+                {
+                    "key": "field_gusli_tasks_related_button",
+                    "label": "Смежная услуга: текст кнопки",
+                    "name": "related_button",
+                    "type": "text",
+                    "placeholder": "Перейти на Gusli Media",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_tasks_related_url",
+                    "label": "Смежная услуга: адрес кнопки",
+                    "name": "related_url",
+                    "type": "text",
+                    "placeholder": "https://gusli-studio.ru/",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_compare",
+            "label": "Десятая секция (Сравнение форматов)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_compare",
+            "label": "Поля секции (Сравнение форматов)",
+            "name": "compare",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_compare_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Сравнение",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_compare_param_label",
+                    "label": "Подпись первого столбца",
+                    "name": "param_label",
+                    "type": "text",
+                    "placeholder": "Параметр",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_compare_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Что входит в каждый формат"
+                },
+                {
+                    "key": "field_gusli_compare_columns",
+                    "label": "Столбцы таблицы",
+                    "name": "columns",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить столбец",
+                    "instructions": "Названия форматов в шапке. Если пусто, выводятся «Лендинг, Сайт, Сервис, Кастом». Число ячеек в каждой строке должно совпадать с числом столбцов.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_compare_column_text",
+                            "label": "Название",
+                            "name": "text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_compare_rows",
+                    "label": "Строки таблицы",
+                    "name": "rows",
+                    "type": "repeater",
+                    "layout": "block",
+                    "button_label": "Добавить строку",
+                    "instructions": "Если пусто, выводятся десять строк по умолчанию (стоимость, срок и так далее).",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_compare_row_label",
+                            "label": "Параметр",
+                            "name": "label",
+                            "type": "text"
+                        },
+                        {
+                            "key": "field_gusli_compare_row_cells",
+                            "label": "Ячейки (по порядку столбцов)",
+                            "name": "cells",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Добавить ячейку",
+                            "sub_fields": [
+                                {
+                                    "key": "field_gusli_compare_cell_text",
+                                    "label": "Текст",
+                                    "name": "text",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "60"
+                                    }
+                                },
+                                {
+                                    "key": "field_gusli_compare_cell_mark",
+                                    "label": "Отметка",
+                                    "name": "mark",
+                                    "type": "select",
+                                    "choices": {
+                                        "": "Обычная",
+                                        "y": "Да (выделена)",
+                                        "n": "Нет (приглушена)"
+                                    },
+                                    "default_value": "",
+                                    "return_format": "value",
+                                    "wrapper": {
+                                        "width": "40"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_accordion_brief",
+            "label": "Одиннадцатая секция (Заявка)",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_brief",
+            "label": "Поля секции (Заявка)",
+            "name": "brief",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_brief_eyebrow",
+                    "label": "Надпись над заголовком",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "placeholder": "Заявка"
+                },
+                {
+                    "key": "field_gusli_brief_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "placeholder": "Начнём с диагностики — она бесплатная"
+                },
+                {
+                    "key": "field_gusli_brief_lead",
+                    "label": "Описание",
+                    "name": "lead",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "placeholder": "Заполните бриф за минуту. На созвоне разберём задачу, назовём трек и вилку. Если поймём, что не наша история — подскажем, к кому идти."
+                },
+                {
+                    "key": "field_gusli_brief_channels",
+                    "label": "Каналы связи",
+                    "name": "channels",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить канал",
+                    "instructions": "Если пусто, выводятся Telegram, WhatsApp и почта из шаблона. Сейчас там заглушки (@gusli_web, hello@gusli.web), замените их своими.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_brief_channel_label",
+                            "label": "Название",
+                            "name": "label",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "35"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_brief_channel_value",
+                            "label": "Значение",
+                            "name": "value",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "35"
+                            }
+                        },
+                        {
+                            "key": "field_gusli_brief_channel_link",
+                            "label": "Ссылка",
+                            "name": "link",
+                            "type": "text",
+                            "placeholder": "https://t.me/… или mailto:…",
+                            "wrapper": {
+                                "width": "30"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_brief_note",
+                    "label": "Примечание под каналами",
+                    "name": "note",
+                    "type": "textarea",
+                    "rows": 2,
+                    "new_lines": "",
+                    "placeholder": "Не звоним без предупреждения и не добавляем в рассылки."
+                },
+                {
+                    "key": "field_gusli_brief_name_label",
+                    "label": "Поле «Имя»: подпись",
+                    "name": "name_label",
+                    "type": "text",
+                    "placeholder": "Имя",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_name_placeholder",
+                    "label": "Поле «Имя»: подсказка",
+                    "name": "name_placeholder",
+                    "type": "text",
+                    "placeholder": "Как к вам обращаться",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_contact_label",
+                    "label": "Поле «Контакт»: подпись",
+                    "name": "contact_label",
+                    "type": "text",
+                    "placeholder": "Телефон или Telegram",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_contact_placeholder",
+                    "label": "Поле «Контакт»: подсказка",
+                    "name": "contact_placeholder",
+                    "type": "text",
+                    "placeholder": "+7 900 000-00-00 / @nick *",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_task_caption",
+                    "label": "Список «Задача»: подпись",
+                    "name": "task_caption",
+                    "type": "text",
+                    "placeholder": "Задача",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_task_default",
+                    "label": "Список «Задача»: номер варианта по умолчанию",
+                    "name": "task_default",
+                    "type": "number",
+                    "min": 1,
+                    "step": 1,
+                    "placeholder": "2",
+                    "instructions": "Считая сверху, с единицы. Если пусто или не подходит, берётся вариант по умолчанию.",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_task_options",
+                    "label": "Список «Задача»: варианты",
+                    "name": "task_options",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить вариант",
+                    "instructions": "Если пусто, выводятся варианты по умолчанию. Тексты вариантов должны совпадать с ответами квиза, иначе результат квиза не подставится.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_brief_task_option_text",
+                            "label": "Вариант",
+                            "name": "text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_brief_budget_caption",
+                    "label": "Список «Бюджет»: подпись",
+                    "name": "budget_caption",
+                    "type": "text",
+                    "placeholder": "Бюджет",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_budget_default",
+                    "label": "Список «Бюджет»: номер варианта по умолчанию",
+                    "name": "budget_default",
+                    "type": "number",
+                    "min": 1,
+                    "step": 1,
+                    "placeholder": "2",
+                    "instructions": "Считая сверху, с единицы. Если пусто или не подходит, берётся вариант по умолчанию.",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_budget_options",
+                    "label": "Список «Бюджет»: варианты",
+                    "name": "budget_options",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить вариант",
+                    "instructions": "Если пусто, выводятся варианты по умолчанию. Тексты вариантов должны совпадать с ответами квиза, иначе результат квиза не подставится.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_brief_budget_option_text",
+                            "label": "Вариант",
+                            "name": "text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_brief_term_caption",
+                    "label": "Список «Срок»: подпись",
+                    "name": "term_caption",
+                    "type": "text",
+                    "placeholder": "Срок",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_term_default",
+                    "label": "Список «Срок»: номер варианта по умолчанию",
+                    "name": "term_default",
+                    "type": "number",
+                    "min": 1,
+                    "step": 1,
+                    "placeholder": "2",
+                    "instructions": "Считая сверху, с единицы. Если пусто или не подходит, берётся вариант по умолчанию.",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_term_options",
+                    "label": "Список «Срок»: варианты",
+                    "name": "term_options",
+                    "type": "repeater",
+                    "layout": "table",
+                    "button_label": "Добавить вариант",
+                    "instructions": "Если пусто, выводятся варианты по умолчанию. Тексты вариантов должны совпадать с ответами квиза, иначе результат квиза не подставится.",
+                    "sub_fields": [
+                        {
+                            "key": "field_gusli_brief_term_option_text",
+                            "label": "Вариант",
+                            "name": "text",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_gusli_brief_about_label",
+                    "label": "Поле «О проекте»: подпись",
+                    "name": "about_label",
+                    "type": "text",
+                    "placeholder": "Коротко о проекте",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_about_placeholder",
+                    "label": "Поле «О проекте»: подсказка",
+                    "name": "about_placeholder",
+                    "type": "text",
+                    "placeholder": "Что за бизнес, есть ли сайт, какие системы используете",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_consent",
+                    "label": "Текст согласия",
+                    "name": "consent",
+                    "type": "text",
+                    "placeholder": "Согласен на обработку персональных данных и на ответ в мессенджере"
+                },
+                {
+                    "key": "field_gusli_brief_submit",
+                    "label": "Кнопка отправки",
+                    "name": "submit",
+                    "type": "text",
+                    "placeholder": "Отправить бриф",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_error",
+                    "label": "Сообщение об ошибке",
+                    "name": "error",
+                    "type": "text",
+                    "placeholder": "Заполните имя, контакт и отметьте согласие.",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_foot",
+                    "label": "Примечание под кнопкой",
+                    "name": "foot",
+                    "type": "text",
+                    "placeholder": "Ответим в течение рабочего дня. Диагностика — 40 минут, бесплатно."
+                },
+                {
+                    "key": "field_gusli_brief_sent_title",
+                    "label": "После отправки: заголовок",
+                    "name": "sent_title",
+                    "type": "text",
+                    "placeholder": "Заявка отправлена",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_brief_sent_text",
+                    "label": "После отправки: текст",
+                    "name": "sent_text",
+                    "type": "text",
+                    "placeholder": "Спасибо! Ответим в течение рабочего дня. Вот что мы получили:",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "menu_order": 0,
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Все секции главной страницы. Каждая секция — сворачиваемый блок с её полями.",
+    "show_in_rest": 0,
+    "instruction_placement": "label",
+    "modified": 1793038261
+}

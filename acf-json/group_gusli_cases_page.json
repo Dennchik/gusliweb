@@ -1,0 +1,121 @@
+{
+    "key": "group_gusli_cases_page",
+    "title": "Страница Кейсы",
+    "fields": [
+        {
+            "key": "field_gusli_cases_page_title",
+            "label": "Заголовок",
+            "name": "title",
+            "type": "text",
+            "placeholder": "Наши Кейсы: Результаты для Клиентов"
+        },
+        {
+            "key": "field_gusli_cases_page_subtitle",
+            "label": "Подзаголовок",
+            "name": "subtitle",
+            "type": "textarea",
+            "rows": 2,
+            "new_lines": "",
+            "placeholder": "Посмотрите примеры наших работ и как мы помогаем бизнесу"
+        },
+        {
+            "key": "field_gusli_cases_page_visible",
+            "label": "Сколько кейсов показывать сразу",
+            "name": "visible",
+            "type": "number",
+            "min": 1,
+            "step": 1,
+            "placeholder": "6",
+            "instructions": "Остальные раскрывает кнопка «Посмотреть ещё». Если пусто, показываются 6."
+        },
+        {
+            "key": "field_gusli_cases_page_items",
+            "label": "Кейсы",
+            "name": "items",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Добавить кейс",
+            "instructions": "Если список пуст, выводятся кейсы по умолчанию.",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_cases_page_item_title",
+                    "label": "Название",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_gusli_cases_page_item_desc",
+                    "label": "Описание",
+                    "name": "desc",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_gusli_cases_page_item_image",
+                    "label": "Картинка",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all"
+                },
+                {
+                    "key": "field_gusli_cases_page_item_alt",
+                    "label": "Подпись картинки (alt)",
+                    "name": "alt",
+                    "type": "text",
+                    "instructions": "Если пусто, берётся название."
+                },
+                {
+                    "key": "field_gusli_cases_page_item_accent",
+                    "label": "Главный результат",
+                    "name": "accent",
+                    "type": "text",
+                    "placeholder": "+105% заявок",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_cases_page_item_tag",
+                    "label": "Второй тег",
+                    "name": "tag",
+                    "type": "text",
+                    "placeholder": "Запуск 10 дней",
+                    "wrapper": {
+                        "width": "50"
+                    }
+                },
+                {
+                    "key": "field_gusli_cases_page_item_link",
+                    "label": "Ссылка на страницу кейса",
+                    "name": "link",
+                    "type": "url",
+                    "instructions": "Если пусто, карточка без ссылки."
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-cases.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1793209317
+}

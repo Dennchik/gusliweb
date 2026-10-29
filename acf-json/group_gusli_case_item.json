@@ -1,0 +1,385 @@
+{
+    "key": "group_gusli_case_item",
+    "title": "Страница кейса",
+    "fields": [
+        {
+            "key": "field_gusli_case_acc_top",
+            "label": "Шапка кейса",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_case_crumb",
+            "label": "Последняя хлебная крошка",
+            "name": "crumb",
+            "type": "text",
+            "placeholder": "Гусли Медиа"
+        },
+        {
+            "key": "field_gusli_case_eyebrow",
+            "label": "Надпись над заголовком",
+            "name": "eyebrow",
+            "type": "text",
+            "placeholder": "Кейс · сайт на React · 2026"
+        },
+        {
+            "key": "field_gusli_case_title",
+            "label": "Заголовок (H1)",
+            "name": "title",
+            "type": "text",
+            "placeholder": "Сайт студии звукозаписи «Гусли Медиа»",
+            "instructions": "Если пусто, берётся заголовок страницы."
+        },
+        {
+            "key": "field_gusli_case_lead",
+            "label": "Описание под заголовком",
+            "name": "lead",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": "",
+            "placeholder": "Многостраничный сайт на React для медиа студии из Обнинска: услуги, портфолио, тарифы и приём заявок в одном месте."
+        },
+        {
+            "key": "field_gusli_case_cta_text",
+            "label": "Кнопка «Заказать»",
+            "name": "cta_text",
+            "type": "text",
+            "placeholder": "Заказать такой же сайт",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_gusli_case_live_text",
+            "label": "Текст ссылки на сайт",
+            "name": "live_text",
+            "type": "text",
+            "placeholder": "Открыть gusli-studio.ru",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_gusli_case_live_url",
+            "label": "Ссылка на живой сайт",
+            "name": "live_url",
+            "type": "url",
+            "instructions": "Если пусто, ссылка и кнопка «Открыть сайт» не выводятся.",
+            "placeholder": "https://gusli-studio.ru/"
+        },
+        {
+            "key": "field_gusli_case_client_name",
+            "label": "Клиент",
+            "name": "client_name",
+            "type": "text",
+            "placeholder": "«Гусли Медиа», Обнинск",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_gusli_case_client_logo",
+            "label": "Логотип клиента",
+            "name": "client_logo",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_gusli_case_type",
+            "label": "Тип проекта",
+            "name": "type",
+            "type": "text",
+            "placeholder": "Многостраничный сайт на React",
+            "wrapper": {
+                "width": "34"
+            }
+        },
+        {
+            "key": "field_gusli_case_year",
+            "label": "Год",
+            "name": "year",
+            "type": "text",
+            "placeholder": "2026",
+            "wrapper": {
+                "width": "33"
+            }
+        },
+        {
+            "key": "field_gusli_case_stack",
+            "label": "Стек",
+            "name": "stack",
+            "type": "text",
+            "placeholder": "React, Vite, SCSS",
+            "wrapper": {
+                "width": "33"
+            }
+        },
+        {
+            "key": "field_gusli_case_hero_image",
+            "label": "Главный скриншот",
+            "name": "hero_image",
+            "type": "image",
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all"
+        },
+        {
+            "key": "field_gusli_case_hero_alt",
+            "label": "Описание главного скриншота (alt)",
+            "name": "hero_alt",
+            "type": "text",
+            "placeholder": "Главная страница сайта «Гусли Медиа»",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_gusli_case_hero_caption",
+            "label": "Подпись главного скриншота",
+            "name": "hero_caption",
+            "type": "text",
+            "placeholder": "Главная страница",
+            "wrapper": {
+                "width": "50"
+            }
+        },
+        {
+            "key": "field_gusli_case_acc_task",
+            "label": "Задача",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_case_task_title",
+            "label": "Заголовок раздела",
+            "name": "task_title",
+            "type": "text",
+            "placeholder": "Задача"
+        },
+        {
+            "key": "field_gusli_case_tasks",
+            "label": "Карточки задачи",
+            "name": "tasks",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Добавить карточку",
+            "instructions": "Если пусто, выводятся значения по умолчанию.",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_case_tasks_title",
+                    "label": "Заголовок",
+                    "name": "title",
+                    "type": "text",
+                    "wrapper": {
+                        "width": "40"
+                    }
+                },
+                {
+                    "key": "field_gusli_case_tasks_text",
+                    "label": "Текст",
+                    "name": "text",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "wrapper": {
+                        "width": "60"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_case_acc_steps",
+            "label": "Что сделали",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_case_steps_title",
+            "label": "Заголовок раздела",
+            "name": "steps_title",
+            "type": "text",
+            "placeholder": "Что сделали"
+        },
+        {
+            "key": "field_gusli_case_steps",
+            "label": "Этапы",
+            "name": "steps",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Добавить этап",
+            "instructions": "Если пусто, выводятся значения по умолчанию.",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_case_steps_name",
+                    "label": "Название",
+                    "name": "name",
+                    "type": "text",
+                    "wrapper": {
+                        "width": "40"
+                    }
+                },
+                {
+                    "key": "field_gusli_case_steps_text",
+                    "label": "Текст",
+                    "name": "text",
+                    "type": "textarea",
+                    "rows": 3,
+                    "new_lines": "",
+                    "wrapper": {
+                        "width": "60"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_case_acc_shots",
+            "label": "Скриншоты",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_case_shots_title",
+            "label": "Заголовок раздела",
+            "name": "shots_title",
+            "type": "text",
+            "placeholder": "Как выглядит сайт"
+        },
+        {
+            "key": "field_gusli_case_shots",
+            "label": "Скриншоты",
+            "name": "shots",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Добавить скриншот",
+            "instructions": "Если пусто, выводятся значения по умолчанию.",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_case_shots_image",
+                    "label": "Картинка",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "wrapper": {
+                        "width": "34"
+                    }
+                },
+                {
+                    "key": "field_gusli_case_shots_alt",
+                    "label": "Описание (alt)",
+                    "name": "alt",
+                    "type": "text",
+                    "wrapper": {
+                        "width": "33"
+                    }
+                },
+                {
+                    "key": "field_gusli_case_shots_caption",
+                    "label": "Подпись",
+                    "name": "caption",
+                    "type": "text",
+                    "wrapper": {
+                        "width": "33"
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_case_acc_results",
+            "label": "Результат",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_case_results_title",
+            "label": "Заголовок раздела",
+            "name": "results_title",
+            "type": "text",
+            "placeholder": "Результат"
+        },
+        {
+            "key": "field_gusli_case_results",
+            "label": "Результаты",
+            "name": "results",
+            "type": "repeater",
+            "layout": "block",
+            "button_label": "Добавить пункт",
+            "instructions": "Если пусто, выводятся значения по умолчанию.",
+            "sub_fields": [
+                {
+                    "key": "field_gusli_case_results_text",
+                    "label": "Пункт",
+                    "name": "text",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_gusli_case_acc_cta",
+            "label": "Призыв внизу",
+            "name": "",
+            "type": "accordion",
+            "open": 0,
+            "multi_expand": 1,
+            "endpoint": 0
+        },
+        {
+            "key": "field_gusli_case_cta_title",
+            "label": "Заголовок",
+            "name": "cta_title",
+            "type": "text",
+            "placeholder": "Нужен такой же сайт?"
+        },
+        {
+            "key": "field_gusli_case_cta_lead",
+            "label": "Текст",
+            "name": "cta_lead",
+            "type": "textarea",
+            "rows": 2,
+            "new_lines": "",
+            "placeholder": "Расскажите о задаче: на созвоне разберём её и назовём срок и вилку. Диагностика бесплатная."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-case-item.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1793203894
+}
