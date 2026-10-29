@@ -41,8 +41,8 @@
 								'image' => '/img/materials/case-3/card_m.png',
 								'link' => home_url('/cases/buketraket/'),
 								'tags' => [
-										['text' => 'Сайт на WordPress', 'accent' => true],
-										['text' => 'Доставка в день', 'accent' => false],
+										['text' => 'Оренбург', 'accent' => true],
+										['text' => 'Каталог - Запуск 15 дней', 'accent' => false],
 								],
 						],
 				],
