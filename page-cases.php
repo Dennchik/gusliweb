@@ -64,6 +64,7 @@
 						<?php if ($card_link !== '') : ?>
 						<a class="section-cases__link" href="<?php echo esc_url($card_link); ?>">
 							<?php endif; ?>
+
 							<div class="section-cases__img">
 								<?php if ($card['image_id']) : ?>
 									<?php echo wp_get_attachment_image($card['image_id'], 'large', false, ['alt' => $card['alt'] ?: $card['title']]); ?>
@@ -75,15 +76,18 @@
 												alt="<?php echo esc_attr($card['alt'] ?: $card['title']); ?>"></picture>
 								<?php endif; ?>
 							</div>
-							<h3 class="section-cases__name"><?php echo esc_html($card['title']); ?></h3>
-							<p class="section-cases__desc"><?php echo esc_html($card['desc']); ?></p>
-							<div class="section-cases__tags">
-								<?php if ($card['accent'] !== '') : ?>
-									<span class="section-cases__tag section-cases__tag--accent"><?php echo esc_html($card['accent']); ?></span><?php endif; ?>
-								<?php if ($card['tag'] !== '') : ?>
-									<span class="section-cases__tag"><?php echo esc_html($card['tag']); ?></span><?php endif; ?>
+							<div class="section-cases__info">
+								<h3 class="section-cases__name"><?php echo esc_html($card['title']); ?></h3>
+								<p class="section-cases__desc"><?php echo esc_html($card['desc']); ?></p>
+								<div class="section-cases__tags">
+									<?php if ($card['accent'] !== '') : ?>
+										<span class="section-cases__tag section-cases__tag--accent"><?php echo esc_html($card['accent']); ?></span><?php endif; ?>
+									<?php if ($card['tag'] !== '') : ?>
+										<span class="section-cases__tag"><?php echo esc_html($card['tag']); ?></span><?php endif; ?>
+								</div>
 							</div>
-							<?php if ($card_link !== '') : ?></a><?php endif; ?>
+							<?php if ($card_link !== '') : ?>
+						</a><?php endif; ?>
 					</article>
 				<?php endforeach; ?>
 			</div>

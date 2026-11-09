@@ -2,7 +2,8 @@
  * Отправка форм сайта на AJAX-обработчик WordPress (action send_cost_form).
  *
  * Слушатель вешается прямо на форму и гасит событие (stopPropagation), поэтому
- * демо-обработчики из собранного бандла (vendors/layouts.js) на этих формах не срабатывают.
+ * демо-обработчики из собранного бандла (vendors/layouts.js) на этих формах не
+ * срабатывают.
  */
 (function () {
 	'use strict';
@@ -34,11 +35,11 @@
 		return fetch(config.ajaxUrl, {
 			method: 'POST',
 			credentials: 'same-origin',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' },
+			headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'},
 			body: body.toString()
 		}).then(function (response) {
 			return response.json().catch(function () {
-				return { success: false, data: { message: GENERIC_ERROR } };
+				return {success: false, data: {message: GENERIC_ERROR}};
 			});
 		});
 	}
@@ -77,7 +78,8 @@
 			event.preventDefault();
 			event.stopPropagation();
 
-			// Выпадающие списки хранят выбор в кнопке — переносим его в скрытые поля.
+			// Выпадающие списки хранят выбор в кнопке — переносим его в скрытые
+			// поля.
 			form.querySelectorAll('[data-select]').forEach(function (select) {
 				var hidden = select.querySelector('input[type="hidden"]');
 				var selected = select.querySelector('.select__button');
@@ -132,18 +134,19 @@
 						'Задача: ' + data.task,
 						'Бюджет: ' + data.budget,
 						'Срок: ' + data.term,
+						'Подбор: ' + (data.package || '—'),
+						'Сборка: ' + (data.sum || '—'),
 						'',
 						'О проекте:',
 						data.message || '—'
 					].join('\n');
 				}
 
-				form.reset();
 				form.style.display = 'none';
 
 				if (sentBox) {
 					sentBox.classList.add('on');
-					sentBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+					sentBox.scrollIntoView({behavior: 'smooth', block: 'center'});
 				}
 			}).catch(function () {
 				showError(GENERIC_ERROR);

@@ -31,12 +31,20 @@
 	require_once get_template_directory() . '/inc/breadcrumbs.php';
 
 
+//* SEO без плагинов (title, description, canonical, Open Graph, Schema) - '/inc/seo.php'
+	require_once get_template_directory() . '/inc/seo.php';
+
+
 //* Подключение Walker для бокового меню - '/inc/class-aside-menu-walker.php'
-	require_once get_template_directory() . '/inc/class-aside-menu-walker.php';
+	require_once get_template_directory() . '/inc/acf-aside-menu-walker.php';
 
 
 //* Подключение Walker для Главного меню шапки - '/inc/class-header-menu-walker.php'
-	require_once get_template_directory() . '/inc/class-header-menu-walker.php';
+	require_once get_template_directory() . '/inc/acf-header-menu-walker.php';
+
+
+//* Подключение Walker для юридических ссылок футера - '/inc/acf-footer-policy-walker.php'
+	require_once get_template_directory() . '/inc/acf-footer-policy-walker.php';
 
 
 //* Подключение Вывод колонки меню футера - '/inc/footer-menus.php
@@ -64,6 +72,9 @@
 //* Адреса юридических страниц для подвала - '/inc/legal.php'
 	require_once get_template_directory() . '/inc/legal.php';
 
+//* Регистрация типов записей.
+require_once get_template_directory() . '/inc/post-types.php';
+
 
 //* Регистрация меню:
 	function theme_register_menus(): void
@@ -72,6 +83,7 @@
 				'aside_menu' => 'Боковое меню страницы',
 				'news_menu' => 'Боковое меню новостей',
 				'header_menu' => 'Главное меню шапки',
+				'footer_policy_menu' => 'Юридические ссылки футера',
 		]);
 	}
 

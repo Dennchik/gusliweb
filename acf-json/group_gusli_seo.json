@@ -1,0 +1,51 @@
+{
+    "key": "group_gusli_seo",
+    "title": "SEO",
+    "fields": [
+        {
+            "key": "field_gusli_seo_title",
+            "label": "SEO-заголовок (title)",
+            "name": "seo_title",
+            "type": "text",
+            "instructions": "Оставьте пустым — заголовок сформируется автоматически: «Название — Gusli Web».",
+            "placeholder": "Разработка лендинга под ключ | Gusli Web",
+            "maxlength": 70
+        },
+        {
+            "key": "field_gusli_seo_description",
+            "label": "SEO-описание (meta description)",
+            "name": "seo_description",
+            "type": "textarea",
+            "rows": 3,
+            "new_lines": "",
+            "maxlength": 160,
+            "instructions": "До 160 символов. Оставьте пустым — описание возьмётся из отрывка или начала текста страницы."
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "menu_order": 0,
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Поля SEO: title и description страницы. Работают вместе с inc/seo.php.",
+    "show_in_rest": 0,
+    "instruction_placement": "label",
+    "modified": 1793820000
+}

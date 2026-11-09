@@ -23,16 +23,7 @@
 	?>
 	<script type="module"
 			crossorigin
-			src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/vendors/layouts.js"></script>
-	<script type="module"
-			crossorigin
-			src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/vendors/preloader.js"></script>
-	<script type="module"
-			crossorigin
 			src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/vendors/vendor.js"></script>
-	<script type="module"
-			crossorigin
-			src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/vendors/select.js"></script>
 	<script type="module" crossorigin src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/main.js"></script>
 	<script type="module" crossorigin src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/app.js"></script>
 	<script type="module"
@@ -90,26 +81,24 @@
 		</div>
 		<header class="header page__header offset-header">
 			<div class="header__container container">
-				<a class="header__logo logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="home"></a>
+				<a class="header__logo logo" href="<?php echo esc_url(home_url('/')); ?>" aria-label="home">
+					<span class="header__logo-image"></span>
+					<span class="header__logo-text">
+						<span>Gusli</span>
+						<span>Web</span>
+					</span>
+				</a>
 				<nav class="header__nav nav" data-da="bp-1" data-da-position="0" data-da-resolution="620">
-					<ul class="nav__list">
-						<li class="nav__item link-underline-center">
-							<a class="nav__link<?php echo $anchor_class; ?>"
-									href="<?php echo esc_url($home_anchor . '#fork'); ?>">Услуги</a>
-						</li>
-						<li class="nav__item link-underline-center">
-							<a class="nav__link<?php echo $anchor_class; ?>"
-									href="<?php echo esc_url($home_anchor . '#cases'); ?>">Кейсы</a>
-						</li>
-						<li class="nav__item link-underline-center">
-							<a class="nav__link<?php echo $anchor_class; ?>"
-									href="<?php echo esc_url($home_anchor . '#packages'); ?>">Пакеты</a>
-						</li>
-						<li class="nav__item link-underline-center">
-							<a class="nav__link<?php echo $contacts_page ? '' : $anchor_class; ?>"
-									href="<?php echo $contacts_page ? esc_url(get_permalink($contacts_page)) : '#contacts'; ?>">Контакты</a>
-						</li>
-					</ul>
+					<?php
+					wp_nav_menu([
+						'theme_location' => 'header_menu',
+						'container'      => false,
+						'menu_class'     => 'nav__list',
+						'menu_id'        => '',
+						'fallback_cb'    => false,
+						'walker'         => new Header_Menu_Walker(),
+					]);
+					?>
 				</nav>
 				<div class="header__burger-button">
 					<div class="burger-button">
